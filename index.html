@@ -47,15 +47,68 @@
     </script>
   </head>
   <body>
-    <header>
+    <header class="w-11/12 mx-auto mt-5">
+      <!-- navber start -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="text-3xl font-bold">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base font-semibold gap-3">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="flex gap-1 bg-green-100 px-5 py-2 border-2 border-solid border-green-400 rounded-xl">
+              <img src="./images/bus-icon.png" alt="" />
+              <p class="text-xl font-semibold">Bus</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--  -->
+    </header>
+    <main class="bg-slate-100">
+      <!--  -->
       <div
         class="btn bg-primary text-white px-5 text-center rounded-xl text-lg font-medium font-inter"
       >
         <span id="available-seat">40</span>
         <span>Seats</span>
       </div>
-    </header>
-    <main class="bg-slate-100">
+
       <!-- seat booking section -->
       <section
         class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5"
@@ -494,7 +547,8 @@
                     >Phone Number*</span
                   >
                 </div>
-                <input id="phone-number"
+                <input
+                  id="phone-number"
                   type="text"
                   placeholder="Enter your phone number"
                   class="input input-bordered w-full"
@@ -511,7 +565,9 @@
                 />
               </label>
 
-              <button id="next-btn" disabled
+              <button
+                id="next-btn"
+                disabled
                 onclick="my_modal_1.showModal()"
                 class="btn bg-primary mt-5 text-lg text-white uppercase w-full"
               >
@@ -537,7 +593,10 @@
                   <p class="my-2">
                     Shortly you will find a confirmation in your email
                   </p>
-                  <button id="btn-continue" class="btn bg-primary text-white px-8 py-3 mt-4">
+                  <button
+                    id="btn-continue"
+                    class="btn bg-primary text-white px-8 py-3 mt-4"
+                  >
                     Continue
                   </button>
                 </form>
